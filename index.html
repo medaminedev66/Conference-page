@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conference page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4f02d055e5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +20,7 @@
         </div>
         <nav>
             <ul>
-                <li>About</li>
+                <li>About</lsi>
                 <li>Program</li>
                 <li>Join</li>
                 <li>Sponser</li>
@@ -28,10 +31,10 @@
     </header>
     <main>
         <div class="menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars fa-2x"></i>
         </div>
         <section class="intro">
-            <h2>Hello! Sharing world</h2>
+            <h2>"Hello! Sharing world"</h2>
             <h1>FACEBOOK INSTANT GAMES CONNFERENCES</h1>
             <div class="intro-descr">
                 <p>Browse the results on this page to see upcoming digital marketing conferences in USA, Canada,
@@ -48,53 +51,61 @@
         </section>
         <section class="main-program">
             <h2>Main Program</h2>
+            <hr>
             <div class="programs">
                 <div class="program">
-                    <img src="./img/icons/lecture.png" alt="lecture">
+                    <img class="program-icon" src="./img/icons/lecture.png" alt="lecture">
                     <h3 class="program-title">Lecture</h3>
                     <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
                         and
                         opening.</p>
                 </div>
                 <div class="program">
-                    <img src="./img/icons/visitors.png" alt="Exhibition">
+                    <img class="program-icon" src="./img/icons/visitors.png" alt="Exhibition">
                     <h3 class="program-title">Exhibition</h3>
                     <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
                         and
                         opening.</p>
                 </div>
                 <div class="program">
-                    <img src="./img/icons/chat.png" alt="Forum">
+                    <img class="program-icon" src="./img/icons/chat.png" alt="Forum">
                     <h3 class="program-title">Forum</h3>
                     <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
                         and
                         opening.</p>
                 </div>
                 <div class="program">
-                    <img src="./img/icons/workshop.png" alt="workshops">
+                    <img class="program-icon" src="./img/icons/workshop.png" alt="workshops">
                     <h3 class="program-title">Workshop</h3>
                     <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
                         and
                         opening.</p>
                 </div>
                 <div class="program">
-                    <img src="./img/icons/global-network.png" alt="ignite">
+                    <img class="program-icon" src="./img/icons/global-network.png" alt="ignite">
                     <h3 class="program-title">Ignite</h3>
                     <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
                         and
                         opening.</p>
                 </div>
             </div>
-            <a href="/">See the hole PROGRAM</a>
+            <!-- <a href="/">See the hole PROGRAM</a> -->
+            <button class="join">Join FACEBOOK IG Conference</button>
         </section>
         <section class="featured-speaker">
             <h2>featured-speaker</h2>
+            <div class="speakers"></div>
+            <button class="more">
+                MORE
+                <i class="fas fa-sort-down fa-lg"></i>
+            </button>
         </section>
         <footer>
             <section class="partner"></section>
             <section class="footer-s"></section>
         </footer>
     </main>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,15 @@
+:root {
+  --font-lato: "Lato", sans-serif;
+  --main-color: #ec5442;
+  --gray-color: #d3d3d3;
+  --black-color: #272a31;
+}
+
+@font-face {
+  src: url(./fonts/Cocogoose.ttf);
+  font-family: cocogoose;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +18,157 @@
 
 header {
   display: none;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+}
+
+main {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
 }
 
 .menu {
   padding: 1rem;
-  height: 3rem;
-  background-color: lightcoral;
+  height: 2rem;
 }
 
 .fa-bars {
   width: 150px;
   height: 150px;
+}
+
+.intro {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.intro h2 {
+  color: #ec5442;
+  font-size: x-large;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.intro h1 {
+  font-family: cocogoose;
+  color: #ec5442;
+  font-size: xx-large;
+  margin-bottom: 0.5rem;
+}
+
+.intro-descr {
+  border: 3px solid white;
+  background-color: #f6f6f6;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.date-local h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.date-local h4 {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.main-program {
+  background-color: #272a31;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-program h2 {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ec5442;
+  width: 15%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.program {
+  background-color: rgb(36, 36, 36, 0.5);
+  display: grid;
+  grid-template-columns: 20% 25% auto;
+  grid-template-rows: 1fr;
+  grid-gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.program-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.program-title {
+  color: #ec5442;
+  font-size: 16px;
+}
+
+.program-descr {
+  color: white;
+  font-size: small;
+}
+
+.join {
+  padding: 1rem;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.featured-speaker {
+  padding: 2rem 1rem 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-speaker h2 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.more {
+  padding: 1rem;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  background-color: white;
+  border: 1px solid #272a31;
+  border-radius: 3px;
+  cursor: pointer;
+  min-height: 0.8rem;
+}
+
+.more i {
+  margin-left: 0.2rem;
+  color: #ec5442;
+}
+
+.visible {
+  display: inline-block;
 }
 
 @media screen and (min-width: 700px) {
