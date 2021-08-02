@@ -3,3 +3,51 @@
   padding: 0;
   box-sizing: content-box;
 }
+
+header {
+  display: none;
+}
+
+.menu {
+  padding: 1rem;
+  height: 3rem;
+  background-color: lightcoral;
+}
+
+.fa-bars {
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: darkgray;
+    align-items: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  nav {
+    flex: 2;
+  }
+
+  button {
+    flex: 1;
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
