@@ -98,7 +98,10 @@ hr {
   background-color: #ec5442;
   width: 15%;
   margin: auto;
-  margin-bottom: 2rem;
+}
+
+.programs {
+  margin-top: 2rem;
 }
 
 .program {

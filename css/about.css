@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  background-color: #ececec;
 }
 
 .info h2 {
@@ -25,8 +26,8 @@
 
 .info-descr {
   text-align: center;
-  border: 3px solid white;
-  background-color: #f6f6f6;
+  border: 3px solid #d3d3d3;
+  background-color: #ffffff;
   padding: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -42,10 +43,61 @@
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  margin-bottom: 0.5rem;
   text-decoration: underline;
 }
 
-.past {
+.the-logo {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.the-logo p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo-conf {
+  border: 1px solid #272a31;
   padding: 2rem;
+  margin-bottom: 2em;
+}
+
+.past {
+  border-top: 1px solid rgb(201, 201, 201);
+  padding: 2rem;
+}
+
+.past p {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.year-box {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec53427e;
+  height: 10rem;
+  width: 100%;
+}
+
+.year {
+  color: white;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.year-box p {
+  color: white;
+}
+
+.bott {
+  margin-bottom: 2rem;
 }
