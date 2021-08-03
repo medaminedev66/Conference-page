@@ -66,6 +66,11 @@
   margin-bottom: 2em;
 }
 
+.logo-conf img {
+  width: 100%;
+  height: auto;
+}
+
 .past {
   border-top: 1px solid rgb(201, 201, 201);
   padding: 2rem;
