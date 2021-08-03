@@ -16,12 +16,6 @@
   box-sizing: content-box;
 }
 
-header {
-  display: none;
-  font-family: "Lato", sans-serif;
-  color: #272a31;
-}
-
 main {
   font-family: "Lato", sans-serif;
   color: #272a31;
@@ -30,6 +24,61 @@ main {
 .menu {
   padding: 1rem;
   height: 2rem;
+}
+
+header {
+  background-color: white;
+  display: none;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  z-index: 10;
+  width: 100%;
+}
+
+.logo img {
+  margin-top: 3rem;
+  width: 220px;
+  height: auto;
+}
+
+nav {
+  margin: 0 2rem 1rem 2rem;
+}
+
+ul {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 70px);
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  width: 100%;
+  font-size: 25px;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ec5442;
+}
+
+.Campaign {
+  width: 160px;
+  height: 40px;
+  border: 3px solid #ec5442;
+  background-color: white;
+  padding: 0.8rem;
+  color: #ec5442;
+  font-weight: 500;
+  font-size: 22px;
+  margin-left: 2rem;
+}
+
+.logo {
+  margin: 2rem 2rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .fa-bars {
@@ -170,6 +219,10 @@ hr {
   color: #ec5442;
 }
 
+.invisible {
+  display: none;
+}
+
 .visible {
   display: inline-block;
 }
@@ -204,7 +257,6 @@ hr {
   display: grid;
   grid-template-columns: minmax(30%, 35%) auto;
   grid-gap: 0.5rem;
-  /* width: 100%; */
   height: auto;
   align-items: center;
   margin-bottom: 1rem;
@@ -229,6 +281,7 @@ hr {
   margin-left: 0;
   height: 1px;
 }
+
 .chess-image {
   position: relative;
   max-width: 45px;
