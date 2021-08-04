@@ -67,7 +67,8 @@ li a {
   text-decoration: inherit;
   color: inherit;
 }
-.Campaign {
+
+.campaign {
   width: 160px;
   height: 40px;
   border: 3px solid #ec5442;
@@ -139,7 +140,7 @@ li a {
 }
 
 .main-program h2 {
-  color: white;
+  color: #d3d3d3;
   font-weight: 500;
   text-align: center;
   margin-bottom: 1rem;
@@ -179,7 +180,7 @@ hr {
 }
 
 .program-descr {
-  color: white;
+  color: #d3d3d3;
   font-size: small;
 }
 
@@ -192,6 +193,10 @@ hr {
   border: none;
   cursor: pointer;
   height: 2rem;
+}
+
+.program-link {
+  display: none;
 }
 
 .featured-speaker {
@@ -333,29 +338,147 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     height: 4rem;
-    background-color: darkgray;
+    min-height: 4rem;
+    background-color: rgb(212, 212, 212);
     align-items: center;
+  }
+
+  p {
+    font-size: 15px;
   }
 
   .logo {
     flex: 1;
-  }
-
-  nav {
-    flex: 2;
-  }
-
-  button {
-    flex: 1;
+    margin: 0;
+    margin-left: 8rem;
   }
 
   .logo img {
+    margin: 0;
     width: 150px;
     height: auto;
   }
 
-  nav ul {
+  nav {
+    margin: 0;
+    flex: 2;
+  }
+
+  .closeBtn {
+    display: none;
+  }
+
+  .campaign {
+    padding: 0.6rem;
+    flex: 1;
+    max-width: 130px;
+    height: 25px;
+    font-size: 18px;
+    margin-right: 8rem;
+    border: 6px solid #ec5442;
+  }
+
+  ul {
     display: flex;
     justify-content: space-around;
+  }
+
+  li {
+    width: 5rem;
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+    border: none;
+  }
+
+  .intro {
+    padding-top: 5rem;
+    padding-left: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .intro h2 {
+    font-size: xx-large;
+  }
+
+  .intro h1 {
+    font-size: 50px;
+    max-width: 900px;
+  }
+
+  .intro-descr {
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  .main-program {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 3rem;
+  }
+
+  .main-program h2 {
+    font-size: xx-large;
+  }
+
+  .programs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    align-items: center;
+    max-width: 158px;
+  }
+
+  .program-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .program-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  .program-descr {
+    font-size: 15.5px;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  hr {
+    width: 5%;
+  }
+
+  .join {
+    display: none;
+  }
+
+  .program-link {
+    margin-top: 3rem;
+    display: inline;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #d3d3d3;
+  }
+
+  .featured-speaker {
+    padding: 2rem 8rem 4rem 8rem;
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
