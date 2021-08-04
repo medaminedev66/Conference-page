@@ -106,3 +106,64 @@
 .bott {
   margin-bottom: 2rem;
 }
+
+@media screen and (min-width: 700px) {
+  .info {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .info h2 {
+    display: none;
+  }
+
+  .info h1 {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 50px;
+  }
+
+  .info-descr {
+    margin: 1.5rem 3rem 2rem 3rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .info-contact h3 {
+    font-size: 16px;
+  }
+
+  .info-contact h4 {
+    font-size: 16px;
+  }
+
+  .the-logo {
+    padding: 3rem 20rem 3rem 20rem;
+  }
+
+  .section-title {
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .past {
+    padding: 3rem 14rem 3rem 14rem;
+  }
+
+  .years {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .year-box {
+    max-width: 380px;
+    margin: 0 0.5rem 1rem 0.5rem;
+  }
+}

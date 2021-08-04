@@ -48,22 +48,22 @@ nav {
   margin: 0 2rem 1rem 2rem;
 }
 
-ul {
+.nav-ul {
   width: 100%;
   display: grid;
   grid-template-rows: repeat(5, 70px);
   align-items: center;
-  list-style: none;
 }
 
-li {
+.nav-ul li {
+  list-style: none;
   width: 100%;
   font-size: 25px;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #ec5442;
 }
 
-li a {
+.nav-ul li a {
   text-decoration: inherit;
   color: inherit;
 }
@@ -108,7 +108,7 @@ li a {
 }
 
 .intro h1 {
-  font-family: cocogoose;
+  font-family: "COCOGOOSE", sans-serif;
   color: #ec5442;
   font-size: xx-large;
   margin-bottom: 0.5rem;
@@ -239,6 +239,7 @@ hr {
 .partner {
   background-color: var(--black-color);
   padding: 2rem;
+  padding-bottom: 3rem;
 }
 
 .partner h2 {
@@ -332,6 +333,37 @@ hr {
   font-size: 11px;
 }
 
+footer {
+  font-family: var(--font-lato);
+  color: #272a31;
+}
+
+.footer-s {
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem 2rem 3rem;
+}
+
+.logo-footer {
+  margin-right: 0.5rem;
+  flex: 1;
+}
+
+.logo-footer img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.copyright {
+  font-size: 17px;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.chinese-lng {
+  display: none;
+}
+
 @media screen and (min-width: 700px) {
   header {
     display: flex;
@@ -378,12 +410,12 @@ hr {
     border: 6px solid #ec5442;
   }
 
-  ul {
+  .nav-ul {
     display: flex;
     justify-content: space-around;
   }
 
-  li {
+  .nav-ul li {
     width: 5rem;
     font-size: 15px;
     padding: 0;
@@ -516,5 +548,18 @@ hr {
 
   .partner {
     padding: 2rem 10rem 2rem 10rem;
+  }
+
+  .footer-s {
+    padding: 3rem 8rem 3rem 8rem;
+  }
+
+  .copyright {
+    flex: 3;
+    font-size: 16px;
+  }
+
+  .chinese-lng {
+    display: inline;
   }
 }

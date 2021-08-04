@@ -11,7 +11,7 @@ const closeMenu = () => {
 
 document.querySelector(".fa-bars").addEventListener("click", openNav);
 document.querySelector(".closeBtn>i").addEventListener("click", closeMenu);
-document.querySelector("li > a").addEventListener("click", closeMenu);
+document.querySelector(".nav-ul >li > a").addEventListener("click", closeMenu);
 
 const generateSpeaker = (index) => {
   var container = document.createElement("div");
