@@ -58,16 +58,13 @@ const openNav = () => {
   document.querySelector('header').classList.add('visible');
   document.querySelector('.closeBtn').classList.toggle('visible');
 }
-
 const closeMenu = () => {
   document.querySelector('header').classList.remove('visible');
   document.querySelector('.closeBtn').classList.toggle('visible');
 };
-
 document.querySelector('.fa-bars').addEventListener('click', openNav);
 document.querySelector('.closeBtn>i').addEventListener('click', closeMenu);
 document.querySelector('.nav-ul >li > a').addEventListener('click', closeMenu);
-
 const generateSpeaker = (index) => {
   const container = document.createElement('div');
   const image = document.createElement('div');
@@ -100,7 +97,6 @@ const generateSpeaker = (index) => {
   proffession.innerText = speakers[index].proffession;
   description.innerText = speakers[index].description;
 };
-
 if (window.innerWidth <= 700) {
   for (let i = 0; i < 2; i++) {
     generateSpeaker(i);
@@ -110,15 +106,12 @@ if (window.innerWidth <= 700) {
     generateSpeaker(i);
   }
 }
-
 const openMore = () => {
   for (let i = 2; i < speakers.length; i += 1) {
     generateSpeaker(i);
   }
   document.querySelector('.more').removeEventListener('click', openMore);
-  second = true;
 };
-let second = false;
 let count = 0;
 document.querySelector('.more').addEventListener('click', openMore);
 document.querySelector('.more').addEventListener('click', () => {
