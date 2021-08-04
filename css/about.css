@@ -88,8 +88,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ec53427e;
-  height: 10rem;
+  /* background-color: #ec53422d; */
+  height: 13rem;
   width: 100%;
 }
 
@@ -105,6 +105,40 @@
 
 .bott {
   margin-bottom: 2rem;
+}
+
+.year-fst {
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 109, 109, 0.6),
+      rgba(242, 109, 109, 0.6)
+    ),
+    url(../img/album/luis-quintero.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
+
+.year-sed {
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 109, 109, 0.6),
+      rgba(242, 109, 109, 0.6)
+    ),
+    url(../img/album/matheus-bertelli.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.year-thd {
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 109, 109, 0.6),
+      rgba(242, 109, 109, 0.6)
+    ),
+    url(../img/album/mentatdgt.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 700px) {
