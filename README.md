@@ -2,6 +2,9 @@
 
 This project is based on an online website for a Facebook instant games conference.
 
+![screenshot](./screenshots/tempsnip.png)
+![screenshot](./screenshots/mobile-screenshot.jpg)
+
 ## Built With
 
 - Major languages : Html, css & Javascript

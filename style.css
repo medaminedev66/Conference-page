@@ -38,8 +38,30 @@ header {
   background: white;
 }
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .top-bar {
   display: none;
+}
+
+.logopro {
+  display: flex;
+  align-items: center;
+}
+
+.logopro i {
+  color: #ec5442;
+}
+
+.logopro p {
+  padding-top: 0.1rem;
+  text-align: center;
+  margin-left: 0.5rem;
+  font-size: x-large;
+  font-family: "COCOGOOSE", sans-serif;
 }
 
 .logo img {
@@ -101,11 +123,8 @@ nav {
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.904),
-      rgba(255, 255, 255, 0.938)
-    ),
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
     url(./img/Backgrounds/bg1.jpg);
   background-repeat: no-repeat;
   background-position: center;

@@ -1,143 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conference page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4f02d055e5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4f02d055e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="top-bar">
+      <div class="top-bar">
         <ul class="top-bar-ul">
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li>Logout</li>
-            <li>Mypage</li>
-            <li>Chinese</li>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li>Logout</li>
+          <li>Mypage</li>
+          <li>Chinese</li>
         </ul>
-        </div>
-        <div class="header-bar">
+      </div>
+      <div class="header-bar">
         <div class="logo">
-            <img src="./img/logo.png" alt="demo">
-            <div class="closeBtn"><i class="fas fa-times fa-2x"></i></div>
+          <a href="/"
+            ><div class="logopro">
+              <i class="fas fa-adjust fa-2x"></i>
+              <p>FACEBOOK IG</p>
+            </div></a
+          >
+          <div class="closeBtn"><i class="fas fa-times fa-2x"></i></div>
         </div>
         <nav>
-            <ul class="nav-ul">
-                <li><a href="./pages/about.html">About</a></li>
-                <li><a href="/">Program</a></li>
-                <li><a href="/">Join</a></li>
-                <li><a href="/">Sponser</a></li>
-                <li><a href="/">News</a></li>
-            </ul>
+          <ul class="nav-ul">
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="/">Program</a></li>
+            <li><a href="/">Join</a></li>
+            <li><a href="/">Sponser</a></li>
+            <li><a href="/">News</a></li>
+          </ul>
         </nav>
         <button class="campaign">CC Campaign</button>
-        </div>
+      </div>
     </header>
     <main>
-        <section class="intro">
-            <div class="menu">
-            <i class="fas fa-bars fa-2x"></i>
-            </div>
-            <h2>"Hello! Sharing world"</h2>
-            <h1>FACEBOOK INSTANT GAMES CONFERENCE</h1>
-            <div class="intro-descr">
-                <p>Browse the results on this page to see upcoming digital marketing conferences in USA, Canada,
-                    Australia,
-                    UK and Europe. List of summits, events, seminars, workshops and similar digital marketing
-                    conferences in
-                    2021.
-                </p>
-            </div>
-            <div class="date-local">
-                <h3>2021.10.20(WED) ~ 26(SAT)</h3>
-                <h4>@at Suntec Singapore Convention & Exhibition Centre</h4>
-            </div>
-        </section>
-        <section class="main-program">
-            <h2>Main Program</h2>
-            <hr>
-            <div class="programs">
-                <div class="program">
-                    <img class="program-icon" src="./img/icons/lecture.png" alt="lecture">
-                    <h3 class="program-title">Lecture</h3>
-                    <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
-                        and
-                        opening.</p>
-                </div>
-                <div class="program">
-                    <img class="program-icon" src="./img/icons/visitors.png" alt="Exhibition">
-                    <h3 class="program-title">Exhibition</h3>
-                    <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
-                        and
-                        opening.</p>
-                </div>
-                <div class="program">
-                    <img class="program-icon" src="./img/icons/chat.png" alt="Forum">
-                    <h3 class="program-title">Forum</h3>
-                    <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
-                        and
-                        opening.</p>
-                </div>
-                <div class="program">
-                    <img class="program-icon" src="./img/icons/workshop.png" alt="workshops">
-                    <h3 class="program-title">Workshop</h3>
-                    <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
-                        and
-                        opening.</p>
-                </div>
-                <div class="program">
-                    <img class="program-icon" src="./img/icons/global-network.png" alt="ignite">
-                    <h3 class="program-title">Ignite</h3>
-                    <p class="program-descr">Listen to the speakers from various countries about the messages of sharing
-                        and
-                        opening.</p>
-                </div>
-            </div>
-            <a class="program-link" href="/">SEE THE HOLE PROGRAM</a>
-            <button class="join">Join FACEBOOK IG Conference</button>
-        </section>
-        <section class="featured-speaker">
-            <h2>featured-speaker</h2>
-            <hr>
-            <div class="speakers"></div>
-            <button class="more">
-                MORE
-                <i class="fas fa-sort-down fa-lg"></i>
-            </button>
-        </section>
+      <section class="intro">
+        <div class="menu">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <h2>"Hello! Sharing world"</h2>
+        <h1>FACEBOOK INSTANT GAMES CONFERENCE</h1>
+        <div class="intro-descr">
+          <p>
+            Browse the results on this page to see upcoming digital marketing
+            conferences in USA, Canada, Australia, UK and Europe. List of
+            summits, events, seminars, workshops and similar digital marketing
+            conferences in 2021.
+          </p>
+        </div>
+        <div class="date-local">
+          <h3>2021.10.20(WED) ~ 26(SAT)</h3>
+          <h4>@at Suntec Singapore Convention & Exhibition Centre</h4>
+        </div>
+      </section>
+      <section class="main-program">
+        <h2>Main Program</h2>
+        <hr />
+        <div class="programs">
+          <div class="program">
+            <img
+              class="program-icon"
+              src="./img/icons/lecture.png"
+              alt="lecture"
+            />
+            <h3 class="program-title">Lecture</h3>
+            <p class="program-descr">
+              Listen to the speakers from various countries about the messages
+              of sharing and opening.
+            </p>
+          </div>
+          <div class="program">
+            <img
+              class="program-icon"
+              src="./img/icons/visitors.png"
+              alt="Exhibition"
+            />
+            <h3 class="program-title">Exhibition</h3>
+            <p class="program-descr">
+              Listen to the speakers from various countries about the messages
+              of sharing and opening.
+            </p>
+          </div>
+          <div class="program">
+            <img class="program-icon" src="./img/icons/chat.png" alt="Forum" />
+            <h3 class="program-title">Forum</h3>
+            <p class="program-descr">
+              Listen to the speakers from various countries about the messages
+              of sharing and opening.
+            </p>
+          </div>
+          <div class="program">
+            <img
+              class="program-icon"
+              src="./img/icons/workshop.png"
+              alt="workshops"
+            />
+            <h3 class="program-title">Workshop</h3>
+            <p class="program-descr">
+              Listen to the speakers from various countries about the messages
+              of sharing and opening.
+            </p>
+          </div>
+          <div class="program">
+            <img
+              class="program-icon"
+              src="./img/icons/global-network.png"
+              alt="ignite"
+            />
+            <h3 class="program-title">Ignite</h3>
+            <p class="program-descr">
+              Listen to the speakers from various countries about the messages
+              of sharing and opening.
+            </p>
+          </div>
+        </div>
+        <a class="program-link" href="/">SEE THE HOLE PROGRAM</a>
+        <button class="join">Join FACEBOOK IG Conference</button>
+      </section>
+      <section class="featured-speaker">
+        <h2>featured-speaker</h2>
+        <hr />
+        <div class="speakers"></div>
+        <button class="more">
+          MORE
+          <i class="fas fa-sort-down fa-lg"></i>
+        </button>
+      </section>
     </main>
     <footer>
-            <section class="partner">
-                <h2>Partner</h2>
-                <hr>
-                <div class="logos">
-                    <img class="partner-logo" src="./img/logos/logo-airbnb-404px-grey-1.png" alt="mozilla logo">
-                    <img class="partner-logo"  src="./img/logos/unnamed.png" alt="mozilla logo">
-                    <img class="partner-logo"  src="./img/logos/mozilla-logo-gray.png" alt="mozilla logo">
-                    <img class="partner-logo"  src="./img/logos/logo-instantgames.png" alt="mozilla logo">
-                </div>
-            </section>
-            <section class="footer-s">
-                <div class="logo-footer">
-                    <img src="../img/logo.png" alt="logo image">
-                </div>
-                <div class="copyright"> 2021 Facebook Instant Games Summit. <br>Some right Reserved.,<br>
-                <p class="chinese-lng">吾伊杰杰, 诶艾哦伊艾 诶艾诶杰儿艾艾艾弗 吾吉艾西吉 艾娜 吾吉诶哦 开诶哦哦伊艾娜 哦勒 艾艾哦伊艾艾伊哦 屁娜伊</p></div>
-            </section>
-        </footer>
-    <script src="./js/data.js"></script>    
+      <section class="partner">
+        <h2>Partner</h2>
+        <hr />
+        <div class="logos">
+          <img
+            class="partner-logo"
+            src="./img/logos/logo-airbnb-404px-grey-1.png"
+            alt="mozilla logo"
+          />
+          <img
+            class="partner-logo"
+            src="./img/logos/unnamed.png"
+            alt="mozilla logo"
+          />
+          <img
+            class="partner-logo"
+            src="./img/logos/mozilla-logo-gray.png"
+            alt="mozilla logo"
+          />
+          <img
+            class="partner-logo"
+            src="./img/logos/logo-instantgames.png"
+            alt="mozilla logo"
+          />
+        </div>
+      </section>
+      <section class="footer-s">
+        <div class="logo-footer">
+          <div class="logopro">
+            <i class="fas fa-adjust fa-2x"></i>
+            <p>FACEBOOK IG</p>
+          </div>
+        </div>
+        <div class="copyright">
+          2021 Facebook Instant Games Summit. <br />Some right Reserved.,<br />
+          <p class="chinese-lng">
+            吾伊杰杰, 诶艾哦伊艾 诶艾诶杰儿艾艾艾弗 吾吉艾西吉 艾娜 吾吉诶哦
+            开诶哦哦伊艾娜 哦勒 艾艾哦伊艾艾伊哦 屁娜伊
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/data.js"></script>
     <script src="./js/index.js"></script>
     <div class="decoration">
-        <i class="fad fa-eclipse-alt fa-2x n-1"></i>
+      <i class="fad fa-eclipse-alt fa-2x n-1"></i>
     </div>
-</body>
-
+  </body>
 </html>
