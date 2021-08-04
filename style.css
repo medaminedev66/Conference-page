@@ -292,7 +292,7 @@ hr {
 }
 
 .chess-image {
-  position: relative;
+  position: absolute;
   max-width: 45px;
   max-height: 45px;
   width: 100%;
@@ -474,11 +474,47 @@ hr {
   }
 
   .featured-speaker {
-    padding: 2rem 8rem 4rem 8rem;
+    padding: 2rem 10rem 4rem 10rem;
   }
 
   .speakers {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+  }
+
+  .container {
+    margin-bottom: 3rem;
+  }
+
+  .more {
+    display: none;
+  }
+
+  .full-name {
+    font-size: 20px;
+  }
+
+  .description,
+  .profession {
+    font-size: 15px;
+  }
+
+  .profile-image {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .big-image {
+    max-width: 130px;
+    min-height: 130px;
+  }
+
+  .featured-speaker h2 {
+    font-size: xx-large;
+  }
+
+  .partner {
+    padding: 2rem 10rem 2rem 10rem;
   }
 }
