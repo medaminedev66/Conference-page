@@ -1,9 +1,17 @@
-document.querySelector(".fa-bars").addEventListener("click", openNav);
-
 function openNav() {
   console.log("clicked");
   document.querySelector("header").classList.add("visible");
+  document.querySelector(".closeBtn").classList.toggle("visible");
 }
+
+const closeMenu = () => {
+  document.querySelector("header").classList.remove("visible");
+  document.querySelector(".closeBtn").classList.toggle("visible");
+};
+
+document.querySelector(".fa-bars").addEventListener("click", openNav);
+document.querySelector(".closeBtn>i").addEventListener("click", closeMenu);
+document.querySelector("li > a").addEventListener("click", closeMenu);
 
 var speakers = [
   {

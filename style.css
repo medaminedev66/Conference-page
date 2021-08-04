@@ -63,6 +63,10 @@ li {
   border-bottom: 2px solid #ec5442;
 }
 
+li a {
+  text-decoration: inherit;
+  color: inherit;
+}
 .Campaign {
   width: 160px;
   height: 40px;
