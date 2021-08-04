@@ -1,28 +1,82 @@
-function openNav() {
-  console.log("clicked");
-  document.querySelector("header").classList.add("visible");
-  document.querySelector(".closeBtn").classList.toggle("visible");
+const speakers = [
+  {
+    name: 'Yochai Benkler',
+    proffession:
+      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+    description:
+      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+    photo: '/img/profiles/alex-suprun-ZHvM3XIOHoE-unsplash.jpg',
+    alt: 'Photo by Christopher Campbell on Unsplash',
+  },
+  {
+    name: 'Ali Abbani',
+    proffession:
+      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+    description:
+      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+    photo: '/img/profiles/nicolas-horn-MTZTGvDsHFY-unsplash.jpg',
+    alt: '',
+  },
+  {
+    name: 'Henry hi',
+    proffession:
+      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+    description:
+      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+    photo: '/img/profiles/aatik-tasneem-7omHUGhhmZ0-unsplash.jpg',
+    alt: '',
+  },
+  {
+    name: 'Julina Hey',
+    proffession:
+      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+    description:
+      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+    photo: '/img/profiles/christopher-campbell-rDEOVtE7vOs-unsplash.jpg',
+    alt: 'Photo by Christopher Campbell on Unsplash',
+  },
+  {
+    name: 'Julina Hey',
+    proffession:
+      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+    description:
+      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+    photo: '/img/profiles/jack-finnigan-rriAI0nhcbc-unsplash.jpg',
+    alt: 'Photo by Jack Finnigan on Unsplash',
+  },
+  {
+    name: 'Julina Hey',
+    proffession:
+      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+    description:
+      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+    photo: '/img/profiles/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg',
+    alt: 'Photo by Tamarcus Brown on Unsplash',
+  },
+];
+const openNav = () => {
+  document.querySelector('header').classList.add('visible');
+  document.querySelector('.closeBtn').classList.toggle('visible');
 }
 
 const closeMenu = () => {
-  document.querySelector("header").classList.remove("visible");
-  document.querySelector(".closeBtn").classList.toggle("visible");
+  document.querySelector('header').classList.remove('visible');
+  document.querySelector('.closeBtn').classList.toggle('visible');
 };
 
-document.querySelector(".fa-bars").addEventListener("click", openNav);
-document.querySelector(".closeBtn>i").addEventListener("click", closeMenu);
-document.querySelector(".nav-ul >li > a").addEventListener("click", closeMenu);
+document.querySelector('.fa-bars').addEventListener('click', openNav);
+document.querySelector('.closeBtn>i').addEventListener('click', closeMenu);
+document.querySelector('.nav-ul >li > a').addEventListener('click', closeMenu);
 
 const generateSpeaker = (index) => {
-  var container = document.createElement("div");
-  var image = document.createElement("div");
-  var chess = document.createElement("img");
-  var photo = document.createElement("img");
-  var fullname = document.createElement("h3");
-  var proffession = document.createElement("h4");
-  var description = document.createElement("p");
-  var information = document.createElement("div");
-
+  const container = document.createElement('div');
+  const image = document.createElement('div');
+  const chess = document.createElement('img');
+  const photo = document.createElement('img');
+  const fullname = document.createElement('h3');
+  const proffession = document.createElement('h4');
+  const description = document.createElement('p');
+  const information = document.createElement('div');
   container.appendChild(image);
   container.appendChild(information);
   image.appendChild(chess);
@@ -30,19 +84,17 @@ const generateSpeaker = (index) => {
   information.appendChild(fullname);
   information.appendChild(proffession);
   information.appendChild(description);
-
-  container.className = "container";
-  image.className = "big-image";
-  chess.className = "chess-image";
-  photo.className = "profile-image";
-  fullname.className = "full-name";
-  proffession.className = "profession";
-  description.className = "description";
-  information.className = "information";
-
-  document.querySelector(".speakers").appendChild(container);
+  container.className = 'container';
+  image.className = 'big-image';
+  chess.className = 'chess-image';
+  photo.className = 'profile-image';
+  fullname.className = 'full-name';
+  proffession.className = 'profession';
+  description.className = 'description';
+  information.className = 'information';
+  document.querySelector('.speakers').appendChild(container);
   fullname.innerText = speakers[index].name;
-  chess.src = "./img/profiles/Chess_board.svg.png";
+  chess.src = './img/profiles/Chess_board.svg.png';
   photo.src = speakers[index].photo;
   photo.alt = speakers[index].alt;
   proffession.innerText = speakers[index].proffession;
@@ -60,22 +112,18 @@ if (window.innerWidth <= 700) {
 }
 
 const openMore = () => {
-  // document.querySelector(".more").classList.add("invisible");
-  // var about = document.querySelector(".about");
-  // document.querySelector(".moremore").appendChild(about);
-  for (let i = 2; i < speakers.length; i++) {
+  for (let i = 2; i < speakers.length; i += 1) {
     generateSpeaker(i);
   }
-  document.querySelector(".more").removeEventListener("click", openMore);
+  document.querySelector('.more').removeEventListener('click', openMore);
   second = true;
 };
-
-var second = false;
-var count = 0;
-document.querySelector(".more").addEventListener("click", openMore);
-document.querySelector(".more").addEventListener("click", () => {
-  count++;
-  if (count == 2) {
-    window.location = "./pages/about.html";
+let second = false;
+let count = 0;
+document.querySelector('.more').addEventListener('click', openMore);
+document.querySelector('.more').addEventListener('click', () => {
+  count += 1;
+  if (count === 2) {
+    window.location = './pages/about.html';
   }
 });
