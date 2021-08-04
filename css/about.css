@@ -3,9 +3,16 @@
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #ececec;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.904),
+      rgba(255, 255, 255, 0.938)
+    ),
+    url(../img/Backgrounds/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .info h2 {

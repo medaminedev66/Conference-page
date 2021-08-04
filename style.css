@@ -22,7 +22,7 @@ main {
 }
 
 .menu {
-  padding: 1rem;
+  padding: 1rem 0 3rem 0;
   height: 2rem;
 }
 
@@ -100,8 +100,16 @@ nav {
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
   padding-bottom: 4rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.904),
+      rgba(255, 255, 255, 0.938)
+    ),
+    url(./img/Backgrounds/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .intro h2 {
@@ -366,6 +374,11 @@ footer {
 
 .chinese-lng {
   display: none;
+}
+
+.n-1 {
+  position: absolute;
+  top: 12rem;
 }
 
 @media screen and (min-width: 700px) {
