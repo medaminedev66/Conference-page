@@ -541,7 +541,7 @@ footer {
   background-position: center;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 760px) {
   .top-bar {
     display: flex;
     background: #272a31;
@@ -558,7 +558,7 @@ footer {
     display: flex;
     flex-direction: column;
     z-index: 10;
-    width: 100%;
+    /* width: 100%; */
     min-height: 6em;
     height: auto;
   }
@@ -628,7 +628,7 @@ footer {
   }
 
   .nav-ul li {
-    width: 5rem;
+    min-width: 3.5rem;
     font-size: 15px;
     padding: 0;
     text-align: center;
