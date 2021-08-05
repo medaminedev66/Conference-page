@@ -12,7 +12,7 @@ This project is based on an online website for a Facebook instant games conferen
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://medaminedev66.github.io/Conference-page/)
 
 ### Setup
 
