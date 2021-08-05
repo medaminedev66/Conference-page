@@ -57,7 +57,7 @@ const speakers = [
 const openNav = () => {
   document.querySelector('header').classList.add('visible');
   document.querySelector('.closeBtn').classList.toggle('visible');
-}
+};
 const closeMenu = () => {
   document.querySelector('header').classList.remove('visible');
   document.querySelector('.closeBtn').classList.toggle('visible');
@@ -98,11 +98,11 @@ const generateSpeaker = (index) => {
   description.innerText = speakers[index].description;
 };
 if (window.innerWidth <= 700) {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i += 1) {
     generateSpeaker(i);
   }
 } else {
-  for (let i = 0; i < speakers.length; i++) {
+  for (let i = 0; i < speakers.length; i += 1) {
     generateSpeaker(i);
   }
 }
