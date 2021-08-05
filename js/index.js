@@ -65,7 +65,7 @@ const closeMenu = () => {
 document.querySelector('.fa-bars').addEventListener('click', openNav);
 document.querySelector('.closeBtn>i').addEventListener('click', closeMenu);
 document.querySelector('.nav-ul >li > a').addEventListener('click', closeMenu);
-const generateSpeaker = (index) => {
+const generateSpeaker = (speaker) => {
   const container = document.createElement('div');
   const image = document.createElement('div');
   const chess = document.createElement('img');
@@ -90,26 +90,27 @@ const generateSpeaker = (index) => {
   description.className = 'description';
   information.className = 'information';
   document.querySelector('.speakers').appendChild(container);
-  fullname.innerText = speakers[index].name;
+  fullname.innerText = speaker.name;
   chess.src = './img/profiles/Chess_board.svg.png';
-  photo.src = speakers[index].photo;
-  photo.alt = speakers[index].alt;
-  proffession.innerText = speakers[index].proffession;
-  description.innerText = speakers[index].description;
+  photo.src = speaker.photo;
+  photo.alt = speaker.alt;
+  proffession.innerText = speaker.proffession;
+  description.innerText = speaker.description;
 };
-if (window.innerWidth <= 700) {
-  for (let i = 0; i < 2; i += 1) {
-    generateSpeaker(i);
+speakers.map((speaker, index) => {  
+  if (window.innerWidth <= 700) {
+    if (index < 2) {
+      generateSpeaker(speaker);
+    } 
   }
-} else {
-  for (let i = 0; i < speakers.length; i += 1) {
-    generateSpeaker(i);
+  else {
+    generateSpeaker(speaker);
   }
-}
+});
 const openMore = () => {
-  for (let i = 2; i < speakers.length; i += 1) {
-    generateSpeaker(i);
-  }
+  speakers.map((speaker, index) => {
+    if (index >= 2) generateSpeaker(speaker);
+  });
   document.querySelector('.more').removeEventListener('click', openMore);
 };
 let count = 0;
