@@ -15,7 +15,7 @@ const speakers = [
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
     photo: './img/profiles/nicolas-horn-MTZTGvDsHFY-unsplash.jpg',
-    alt: '',
+    alt: 'Photo by Nicoles Horn on Unsplash',
   },
   {
     name: 'Henry hi',
@@ -24,7 +24,7 @@ const speakers = [
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
     photo: './img/profiles/aatik-tasneem-7omHUGhhmZ0-unsplash.jpg',
-    alt: '',
+    alt: 'Photo by Aatik Tsneem on Unsplash',
   },
   {
     name: 'Julina Hey',
