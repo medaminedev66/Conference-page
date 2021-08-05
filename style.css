@@ -1,5 +1,831 @@
+:root {
+  --font-lato: "Lato", sans-serif;
+  --main-color: #ec5442;
+  --gray-color: #d3d3d3;
+  --black-color: #272a31;
+}
+
+@font-face {
+  src: url(./fonts/Cocogoose.ttf);
+  font-family: cocogoose;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+}
+
+main {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+}
+
+.menu {
+  padding: 1rem 0 3rem 0;
+  height: 2rem;
+}
+
+header {
+  display: none;
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  z-index: 10;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  background: white;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.top-bar {
+  display: none;
+}
+
+.logopro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.logopro i {
+  color: #ec5442;
+}
+
+.logopro p {
+  padding-top: 0.1rem;
+  text-align: center;
+  margin-left: 0.5rem;
+  font-size: 2.2vw;
+  font-family: "COCOGOOSE", sans-serif;
+}
+
+.logo img {
+  margin-top: 3rem;
+  width: 220px;
+  height: auto;
+}
+
+nav {
+  margin: 0 2rem 1rem 2rem;
+}
+
+.nav-ul {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 70px);
+  align-items: center;
+}
+
+.nav-ul li {
+  list-style: none;
+  width: 100%;
+  font-size: 25px;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ec5442;
+}
+
+.nav-ul li a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.campaign {
+  width: 160px;
+  height: 40px;
+  border: 3px solid #ec5442;
+  background-color: white;
+  padding: 0.8rem;
+  color: #ec5442;
+  font-weight: 500;
+  font-size: 22px;
+  margin-left: 2rem;
+}
+
+.logo {
+  margin: 2rem 2rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  width: 150px;
+  height: 150px;
+}
+
+.intro {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
+    url(./img/Backgrounds/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro h2 {
+  color: #ec5442;
+  font-size: x-large;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.intro h1 {
+  font-family: "COCOGOOSE", sans-serif;
+  color: #ec5442;
+  font-size: xx-large;
+  margin-bottom: 0.5rem;
+}
+
+.intro-descr {
+  border: 3px solid white;
+  background-color: #f6f6f6;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.date-local h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.date-local h4 {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.main-program {
+  background-color: #272a31;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-program h2 {
+  color: #d3d3d3;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ec5442;
+  width: 15%;
+  margin: auto;
+}
+
+.programs {
+  margin-top: 2rem;
+}
+
+.program {
+  background-color: rgb(36, 36, 36, 0.5);
+  display: grid;
+  grid-template-columns: 20% 25% auto;
+  grid-template-rows: 1fr;
+  grid-gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.program-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.program-title {
+  color: #ec5442;
+  font-size: 16px;
+}
+
+.program-descr {
+  color: #d3d3d3;
+  font-size: small;
+}
+
+.join {
+  padding: 1rem;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.program-link {
+  display: none;
+}
+
+.featured-speaker {
+  padding: 2rem 1rem 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-speaker h2 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.more {
+  padding: 1rem;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  background-color: white;
+  border: 1px solid #272a31;
+  border-radius: 3px;
+  cursor: pointer;
+  min-height: 0.8rem;
+}
+
+.more i {
+  margin-left: 0.2rem;
+  color: #ec5442;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: inline-block;
+}
+
+.partner {
+  background-color: var(--black-color);
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+
+.partner h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partner-logo {
+  width: 6rem;
+  height: 2rem;
+  margin: 0.2em;
+  margin-top: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(30%, 35%) auto;
+  grid-gap: 0.5rem;
+  height: auto;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.big-image {
+  margin: auto;
+  position: relative;
+  max-width: 110px;
+  min-height: 110px;
+  grid-column: 1/2;
+  height: auto;
+  width: 100%;
+}
+
+.information {
+  margin: auto;
+  grid-column: 2/3;
+}
+
+.information hr {
+  margin-left: 0;
+  height: 1px;
+}
+
+.chess-image {
+  position: absolute;
+  max-width: 45px;
+  max-height: 45px;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+.profile-image {
+  position: absolute;
+  max-width: 100px;
+  width: 100%;
+  z-index: 1;
+  max-height: 100px;
+  right: 0;
+  bottom: 0;
+  object-fit: contain;
+}
+
+.full-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.profession {
+  font-size: 11px;
+  color: #ec5442;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+footer {
+  font-family: var(--font-lato);
+  color: #272a31;
+}
+
+.footer-s {
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem 2rem 3rem;
+}
+
+.logo-footer {
+  display: flex;
+  margin-right: 0.5rem;
+  flex: 1;
+  width: auto;
+  height: auto;
+}
+
+.logo-footer img {
+  width: 100%;
+  height: auto;
+}
+
+.copyright {
+  width: 100%;
+  font-size: 14px;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.chinese-lng {
+  display: none;
+}
+
+.info {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
+    url(../img/Backgrounds/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.info h2 {
+  text-align: center;
+  color: #ec5442;
+  font-size: x-large;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.info h1 {
+  text-align: center;
+  font-family: "COCOGOOSE", sans-serif;
+  color: #ec5442;
+  font-size: xx-large;
+  margin-bottom: 0.5rem;
+}
+
+.info-descr {
+  text-align: center;
+  border: 3px solid #d3d3d3;
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-contact h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 13px;
+  margin-bottom: 0.5rem;
+}
+
+.info-contact h4 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.the-logo {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.the-logo p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo-conf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #272a31;
+  padding: 2rem;
+  margin-bottom: 2em;
+}
+
+.logo-conf img {
+  width: 100%;
+  height: auto;
+}
+
+.past {
+  border-top: 1px solid rgb(201, 201, 201);
+  padding: 2rem;
+}
+
+.past p {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.year-box {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  width: 100%;
+}
+
+.year {
+  color: white;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.year-box p {
+  color: white;
+}
+
+.bott {
+  margin-bottom: 2rem;
+}
+
+.year-fst {
+  background-image:
+    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
+    url(../img/album/luis-quintero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.year-sed {
+  background-image:
+    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
+    url(../img/album/matheus-bertelli.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.year-thd {
+  background-image:
+    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
+    url(../img/album/mentatdgt.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 760px) {
+  .top-bar {
+    display: flex;
+    background: #272a31;
+    color: #d3d3d3;
+    justify-content: flex-end;
+    height: 2rem;
+    padding-right: 1rem;
+    font-size: 15px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    min-height: 6em;
+    height: auto;
+  }
+
+  .header-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+    min-height: 4rem;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0 0 5px;
+  }
+
+  .top-bar-ul {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .logo {
+    flex: 1;
+    margin: 0;
+    margin-left: 8rem;
+  }
+
+  .logo img {
+    margin: 0;
+    width: 150px;
+    height: auto;
+  }
+
+  nav {
+    margin: 0;
+    flex: 2;
+  }
+
+  .closeBtn {
+    display: none;
+  }
+
+  .campaign {
+    padding: 0.6rem;
+    flex: 1;
+    max-width: 130px;
+    min-height: 25px;
+    height: auto;
+    font-size: 18px;
+    margin-right: 8rem;
+    border: 6px solid #ec5442;
+  }
+
+  .nav-ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-ul li {
+    min-width: 3.5rem;
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+    border: none;
+  }
+
+  .intro {
+    padding-top: 12rem;
+    padding-left: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .intro h2 {
+    font-size: xx-large;
+  }
+
+  .intro h1 {
+    font-size: 50px;
+    max-width: 900px;
+  }
+
+  .intro-descr {
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  .main-program {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 3rem;
+  }
+
+  .main-program h2 {
+    font-size: xx-large;
+  }
+
+  .programs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    align-items: center;
+    max-width: 158px;
+  }
+
+  .program-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .program-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  .program-descr {
+    font-size: 15.5px;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  hr {
+    width: 5%;
+  }
+
+  .join {
+    display: none;
+  }
+
+  .program-link {
+    margin-top: 3rem;
+    display: inline;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #d3d3d3;
+  }
+
+  .featured-speaker {
+    padding: 2rem 10rem 4rem 10rem;
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+  }
+
+  .container {
+    margin-bottom: 3rem;
+  }
+
+  .more {
+    display: none;
+  }
+
+  .full-name {
+    font-size: 20px;
+  }
+
+  .description,
+  .profession {
+    font-size: 15px;
+  }
+
+  .profile-image {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .big-image {
+    max-width: 130px;
+    min-height: 130px;
+  }
+
+  .featured-speaker h2 {
+    font-size: xx-large;
+  }
+
+  .partner {
+    padding: 2rem 10rem 2rem 10rem;
+  }
+
+  .footer-s {
+    padding: 3rem 8rem 3rem 8rem;
+  }
+
+  .copyright {
+    flex: 3;
+    font-size: 16px;
+  }
+
+  .chinese-lng {
+    display: inline;
+  }
+
+  .info {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+  }
+
+  .info h2 {
+    display: none;
+  }
+
+  .info h1 {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 50px;
+  }
+
+  .info-descr {
+    margin: 1.5rem 3rem 2rem 3rem;
+  }
+
+  .info-contact h3 {
+    font-size: 16px;
+  }
+
+  .info-contact h4 {
+    font-size: 16px;
+  }
+
+  .the-logo {
+    padding: 3rem 20rem 3rem 20rem;
+  }
+
+  .section-title {
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .past {
+    padding: 3rem 14rem 3rem 14rem;
+  }
+
+  .years {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .year-box {
+    max-width: 380px;
+    margin: 0 0.5rem 1rem 0.5rem;
+  }
 }
