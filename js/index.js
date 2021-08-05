@@ -91,7 +91,7 @@ const generateSpeaker = (speaker) => {
   information.className = 'information';
   document.querySelector('.speakers').appendChild(container);
   fullname.innerText = speaker.name;
-  chess.src = './img/profiles/Chess_board.png';
+  chess.src = './img/profiles/Chess_Board.png';
   photo.src = speaker.photo;
   photo.alt = speaker.alt;
   proffession.innerText = speaker.proffession;

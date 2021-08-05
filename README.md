@@ -3,7 +3,7 @@
 This project is based on an online website for a Facebook instant games conference.
 
 ![screenshot](./screenshots/tempsnip.png)
-![screenshot](./screenshots/mobile-screenshot.jpg)
+![screenshot](./screenshots/mobile-screenshot.JPG)
 
 ## Built With
 
