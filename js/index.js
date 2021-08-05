@@ -5,7 +5,7 @@ const speakers = [
       'Berkman professor of Entreneurial Legal studies at harvard Law school',
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
-    photo: '/img/profiles/alex-suprun-ZHvM3XIOHoE-unsplash.jpg',
+    photo: '../img/profiles/alex-suprun-ZHvM3XIOHoE-unsplash.jpg',
     alt: 'Photo by Christopher Campbell on Unsplash',
   },
   {
@@ -14,7 +14,7 @@ const speakers = [
       'Berkman professor of Entreneurial Legal studies at harvard Law school',
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
-    photo: '/img/profiles/nicolas-horn-MTZTGvDsHFY-unsplash.jpg',
+    photo: '../img/profiles/nicolas-horn-MTZTGvDsHFY-unsplash.jpg',
     alt: '',
   },
   {
@@ -23,7 +23,7 @@ const speakers = [
       'Berkman professor of Entreneurial Legal studies at harvard Law school',
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
-    photo: '/img/profiles/aatik-tasneem-7omHUGhhmZ0-unsplash.jpg',
+    photo: '../img/profiles/aatik-tasneem-7omHUGhhmZ0-unsplash.jpg',
     alt: '',
   },
   {
@@ -32,7 +32,7 @@ const speakers = [
       'Berkman professor of Entreneurial Legal studies at harvard Law school',
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
-    photo: '/img/profiles/christopher-campbell-rDEOVtE7vOs-unsplash.jpg',
+    photo: '../img/profiles/christopher-campbell-rDEOVtE7vOs-unsplash.jpg',
     alt: 'Photo by Christopher Campbell on Unsplash',
   },
   {
@@ -41,7 +41,7 @@ const speakers = [
       'Berkman professor of Entreneurial Legal studies at harvard Law school',
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
-    photo: '/img/profiles/jack-finnigan-rriAI0nhcbc-unsplash.jpg',
+    photo: '../img/profiles/jack-finnigan-rriAI0nhcbc-unsplash.jpg',
     alt: 'Photo by Jack Finnigan on Unsplash',
   },
   {
@@ -50,7 +50,7 @@ const speakers = [
       'Berkman professor of Entreneurial Legal studies at harvard Law school',
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
-    photo: '/img/profiles/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg',
+    photo: '../img/profiles/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg',
     alt: 'Photo by Tamarcus Brown on Unsplash',
   },
 ];
@@ -91,7 +91,7 @@ const generateSpeaker = (index) => {
   information.className = 'information';
   document.querySelector('.speakers').appendChild(container);
   fullname.innerText = speakers[index].name;
-  chess.src = './img/profiles/Chess_board.svg.png';
+  chess.src = '../img/profiles/Chess_board.svg.png';
   photo.src = speakers[index].photo;
   photo.alt = speakers[index].alt;
   proffession.innerText = speakers[index].proffession;
