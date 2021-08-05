@@ -97,19 +97,20 @@ const generateSpeaker = (speaker) => {
   proffession.innerText = speaker.proffession;
   description.innerText = speaker.description;
 };
-speakers.map((speaker, index) => {  
+speakers.map((speaker, index) => {
   if (window.innerWidth <= 700) {
     if (index < 2) {
       generateSpeaker(speaker);
-    } 
-  }
-  else {
+    }
+  } else {
     generateSpeaker(speaker);
   }
+  return speaker;
 });
 const openMore = () => {
   speakers.map((speaker, index) => {
     if (index >= 2) generateSpeaker(speaker);
+    return speaker;
   });
   document.querySelector('.more').removeEventListener('click', openMore);
 };
